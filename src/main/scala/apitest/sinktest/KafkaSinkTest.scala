@@ -36,15 +36,11 @@ object KafkaSinkTest {
     })
 
     // sink: kafka
-
-    //
     dataStream.addSink(new FlinkKafkaProducer011[String]("sinkTest",
       new SimpleStringSchema(), properties))
     dataStream.print("kafka sink")
 
-
     //
     env.execute("Kafka sink")
-
   }
 }

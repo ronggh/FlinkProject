@@ -27,7 +27,6 @@ object JdbcSinkTest {
     // 运行后，看表中是否有数据
     dataStream.addSink(new MyJdbcSink())
 
-
     //
     env.execute("Jdbc Sink Test")
   }
