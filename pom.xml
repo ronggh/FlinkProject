@@ -49,6 +49,13 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.44</version>
         </dependency>
+
+        <!-- 本地状态存储 -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-statebackend-rocksdb_2.11</artifactId>
+            <version>1.7.2</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
